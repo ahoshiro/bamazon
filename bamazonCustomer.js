@@ -31,7 +31,7 @@ function displayInventory() {
 
 		console.log('Existing Inventory: ');
         console.log('--------------------------------------------------------------------------\n');
-        console.log('|Item ID | Product Name            | Product Description          | Price');
+        console.log('|Item ID | Product Name            | Product Description          | Price | Stock QTY');
         console.log('--------------------------------------------------------------------------\n');
 
 		var strOut = '';
@@ -40,7 +40,8 @@ function displayInventory() {
 			strOut += 'Item ID: ' + data[i].item_id + ' || ';
 			strOut += 'Product Name: ' + data[i].product_name + ' || ';
 			strOut += 'Department: ' + data[i].department_name + ' || ';
-			strOut += 'Price: $' + data[i].price + '\n';
+            strOut += 'Price: $' + data[i].price + '\n';
+            strOut += 'Qty: $' + data[i].quantity + '\n';
 
 			console.log(strOut);
 		}
